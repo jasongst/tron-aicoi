@@ -5,7 +5,7 @@ gameState = [['.' for x in range(30)] for y in range (20)]
 
 def showGraph(graph):
     for i in range(len(graph)):
-        print(graph[i], file=sys.stderr, flush=True)
+        print(' '.join(graph[i]), file=sys.stderr, flush=True)
 
 def bestAction(x, y):
     availableActions = []
